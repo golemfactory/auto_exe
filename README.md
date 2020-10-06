@@ -1,5 +1,4 @@
-# install_and_run
-Draft repo
+# Installation
 
 ```git clone git@github.com:golemfactory/install_and_run.git```
 
