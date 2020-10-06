@@ -20,7 +20,11 @@
 
 
 
-## Running Quick Primer tutorial (JS)
+
+
+### TODO:
+
+#### Running Quick Primer tutorial (JS)
 
 To install all pre-reqs, set up yagna, run everything needed, and run tutorial:
 
@@ -29,7 +33,7 @@ To install all pre-reqs, set up yagna, run everything needed, and run tutorial:
 ```./run_primer_tutorial_js.sh```
 
 
-## Running HashCat tutorial
+#### Running HashCat tutorial
 
 (todo)
 
