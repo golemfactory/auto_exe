@@ -11,7 +11,7 @@
 
 To install all pre-reqs, set up yagna, run everything needed, and run tutorial:
 
-```./install_yagna_and_run_primer_tutorial.sh```
+```./install_yagna_and_run_primer_tutorial_python.sh```
 
 ## Running HashCat tutorial
 
