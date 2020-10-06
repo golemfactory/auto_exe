@@ -7,11 +7,21 @@
 
 ``` cd install_and_run```
 
-## Running Quick Primer tutorial
+## Running Quick Primer tutorial (Python)
 
 To install all pre-reqs, set up yagna, run everything needed, and run tutorial:
 
 ```./install_yagna_and_run_primer_tutorial_python.sh```
+
+## Running Quick Primer tutorial (JS)
+
+To install all pre-reqs, set up yagna, run everything needed, and run tutorial:
+
+(todo)
+
+```./install_yagna_and_run_primer_tutorial_js.sh```
+
+
 
 ## Running HashCat tutorial
 
