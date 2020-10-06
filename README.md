@@ -9,13 +9,13 @@
 
 
 ## Clean Up from all previous runs
-./clean.sh
+```./clean.sh```
 
 ## Install and run Yagna, initialise, request funds from faucet
-./install_yagna.sh
+```./install_yagna.sh```
 
 ## Run Python Primer Tutorial
-./run_primer_tutorial_python.sh
+```./run_primer_tutorial_python.sh```
 
 
 
