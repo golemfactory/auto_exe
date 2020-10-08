@@ -14,7 +14,9 @@ sleep 10
 
 yagna app-key create requestor
 yagna app-key list
+echo "Running Yagna Payment Init"
 yagna payment init -r
+echo
 yagna payment status
 
 

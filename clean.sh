@@ -2,7 +2,7 @@
 
 # PREREQS
 # You're going to need jq installed
-# brew install jq or apt-get install jq
+# brew install jq or apt-get jq python3-venv
 
 _ostype="$(uname -s)"
 
@@ -22,7 +22,7 @@ if [ "$_ostype" = "Linux" ]; then
 fi
 
 # Remove last install of blender and env
-rm -rf ~/test_run || true
+rm -rf ~/test_run 
 killall yagna
 # Remove Python env
 
