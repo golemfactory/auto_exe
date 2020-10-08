@@ -8,12 +8,17 @@ pip3 install certifi
 pip3 install -i https://test.pypi.org/simple/ --extra-index-url=https://pypi.org/simple/ yapapi==0.3.0a1.
 git clone https://github.com/golemfactory/yapapi.git
 cd yapapi
+pwd
 git checkout b0.3
 export YAGNA_APPKEY=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[1]'`
 export YAGNA_ADDR=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[2]'`
 
 cd examples/blender
 python3 ./blender.py --subnet-tag devnet-alpha.2
+git checkout rad9k/yacat
+cd ../yacat
+python3 yacat.py '?a?a?a' '$P$5ZDzPE45CLLhEx/72qt3NehVzwN2Ry/' --subnet-tag devnet-alpha.2
+
 
 # HINTS ON HOW TO RUN TESTS
 
