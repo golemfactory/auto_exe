@@ -21,7 +21,11 @@ python3 yacat.py '?a?a?a' '$P$5ZDzPE45CLLhEx/72qt3NehVzwN2Ry/' --subnet-tag devn
 
 
 # HINTS ON HOW TO RUN TESTS
-
+echo
+echo
+echo "NEXT:"
+echo 
+echo
 echo "To continue running tests execute the following:"
 echo "cd test_run/yapapi/examples/blender/"
 echo "export YAGNA_APPKEY=$YAGNA_APPKEY"
@@ -32,7 +36,7 @@ echo "You can access your rinkeby address on etherscan here:"
 echo "https://rinkeby.etherscan.io/address/$YAGNA_ADDR"
 
 
-And after experiments
+echo "And after experiments"
 
 echo "deactivate"
 echo "cd ../../../"
