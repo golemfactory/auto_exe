@@ -27,7 +27,7 @@ echo "NEXT:"
 echo 
 echo
 echo "To continue running tests execute the following:"
-echo "cd test_run/yapapi/examples/blender/"
+echo "cd ~/test_run/yapapi/examples/blender/"
 echo "export YAGNA_APPKEY=$YAGNA_APPKEY"
 echo "source ~/.envs/yagna-python-tutorial/bin/activate"
 echo "python3 ./blender.py --subnet-tag devnet-alpha.2"
