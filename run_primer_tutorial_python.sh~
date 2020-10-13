@@ -5,8 +5,8 @@ python3 -m venv ~/.envs/yagna-python-tutorial
 source ~/.envs/yagna-python-tutorial/bin/activate
 pip3 install -U pip
 pip3 install certifi
-
-pip3 install -i https://test.pypi.org/simple/ --no-use-pep517 --extra-index-url=https://pypi.org/simple/ yapapi==0.3.0a3
+pip install --upgrade wheel
+pip3 install -i https://test.pypi.org/simple/ --extra-index-url=https://pypi.org/simple/ yapapi==0.3.0a3
 git clone https://github.com/golemfactory/yapapi.git
 cd yapapi
 pwd
