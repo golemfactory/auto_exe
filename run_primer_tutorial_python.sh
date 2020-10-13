@@ -17,8 +17,7 @@ cd examples/blender
 python3 ./blender.py --subnet-tag devnet-alpha.2
 git checkout rad9k/yacat
 cd ../yacat
-python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag devnet-alpha.2 --numberOfProviders 3
-
+python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag devnet-alpha.2 --number-of-providers 3
 
 # HINTS ON HOW TO RUN TESTS
 echo
