@@ -6,19 +6,23 @@ source ~/.envs/yagna-python-tutorial/bin/activate
 pip3 install -U pip
 pip3 install certifi
 
-pip3 install -i https://test.pypi.org/simple/ --no-use-pep517 --extra-index-url=https://pypi.org/simple/ yapapi==0.3.0a3
+#pip3 install -i https://test.pypi.org/simple/ --no-use-pep517 --extra-index-url=https://pypi.org/simple/ yapapi==0.3.0a3
+
+
+
 git clone https://github.com/golemfactory/yapapi.git
 cd yapapi
-pwd
-git checkout b0.3
+git checkout ff9bc796ddf0dd05ae9060fa39462f0539af0f10
+
+pip install .
+
 export YAGNA_APPKEY=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[1]'`
 export YAGNA_ADDR=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[2]'`
 
 cd examples/blender
-python3 ./blender.py --subnet-tag devnet-alpha.2
-git checkout rad9k/yacat
+python3 ./blender.py --subnet-tag devnet-alpha.3
 cd ../yacat
-python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag devnet-alpha.2 --number-of-providers 3
+python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag devnet-alpha.3 --number-of-providers 3
 
 # HINTS ON HOW TO RUN TESTS
 echo
