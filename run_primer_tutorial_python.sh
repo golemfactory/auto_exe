@@ -12,9 +12,11 @@ pip3 install certifi
 
 git clone https://github.com/golemfactory/yapapi.git
 cd yapapi
-git checkout ff9bc796ddf0dd05ae9060fa39462f0539af0f10
+git checkout b0.4
 
-pip install .
+
+pip3 install -U pip
+pip3 install --extra-index-url https://test.pypi.org/simple/ yapapi==0.4.0a0 certifi
 
 export YAGNA_APPKEY=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[1]'`
 export YAGNA_ADDR=`yagna app-key list --json | jq -r '.values' | jq -r '.[0]' |jq -r '.[2]'`
