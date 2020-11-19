@@ -59,24 +59,21 @@ ansi::heading "$star * Hints" 80 "$star"
 # HINTS ON HOW TO RUN TESTS
 echo
 echo
-echo "NEXT:"
-echo 
-echo
 echo "To continue running tests execute the following:"
-echo "cd ~/test_run/yapapi/examples/blender/"
-echo "export YAGNA_APPKEY=$YAGNA_APPKEY"
-echo "source ~/.envs/yagna-python-tutorial/bin/activate"
-echo "python3 ./blender.py --subnet-tag community.3"
+echo "	cd ~/test_run/yapapi/examples/blender/"
+echo "	export YAGNA_APPKEY=$YAGNA_APPKEY"
+echo "	source ~/.envs/yagna-python-tutorial/bin/activate"
+echo "	python3 ./blender.py --subnet-tag community.3"
 echo
 echo "You can access your L1 address on etherscan here:"
-echo "https://rinkeby.etherscan.io/address/$YAGNA_ADDR"
+echo "	--> https://rinkeby.etherscan.io/address/$YAGNA_ADDR"
 echo "You can access your L2 funds on zkSync here:"
-echo "https://rinkeby.zkscan.io/explorer/accounts/$YAGNA_ADDR"
+echo "	--> https://rinkeby.zkscan.io/explorer/accounts/$YAGNA_ADDR"
 
 
 echo "After experiments you're done with the experiments:"
 echo
-echo "deactivate"
-echo "cd ../../../"
+echo "	deactivate"
+echo "	cd ../../../"
 
 
