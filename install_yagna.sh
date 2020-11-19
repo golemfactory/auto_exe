@@ -15,7 +15,7 @@ yagna --version
 # Init Yagna
 echo
 ansi::heading "$star * Initialising Yagna Daemon" 80 "$star"
-yagna service run > yagna.logs 2>&1 &
+yagna service run >> ~/yagna.logs 2>&1 &
 # echo "	`yagna service run`"
 
 
@@ -39,7 +39,7 @@ echo -ne '\n'
 echo
 ansi::heading "$star * Creating Yagna identity.." 80 "$star"
 yagna app-key create requestor
-echo: "Yagna Key: "
+echo "Yagna Key: "
 yagna app-key list
 
 # Checking for payments status, do we have founds?

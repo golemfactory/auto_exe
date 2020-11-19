@@ -15,7 +15,7 @@ source ~/.envs/yagna-python-tutorial/bin/activate
 
 
 pip3 install -U pip
-pip3 install --extra-index-url https://test.pypi.org/simple/ yapapi==0.4.0a0 certifi
+pip3 install --extra-index-url https://test.pypi.org/simple/ yapapi==0.4.0a1 certifi
 
 
 # YAPAPI CLONE
@@ -50,6 +50,16 @@ python3 ./blender.py --subnet-tag community.3
 #ansi::heading "$star * Running Yacat tutorial" 80 "$star"
 #cd ../yacat
 #python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag community.3 --number-of-providers 3
+
+
+# VIM
+#echo
+#ansi::heading "$star * VIM community example" 80 "$star"
+
+#cd ..
+#git clone https://github.com/canokaue/gvm-vim
+#cd gvm-vim
+#python3 ./vim-gvm.py --subnet-tag community.3
 
 
 echo
