@@ -19,18 +19,18 @@ yagna service run > yagna.logs 2>&1 &
 # echo "	`yagna service run`"
 
 
-# Awaiting funds from the faucet (9 seconds)
+# Awaiting funds from the faucet (45 seconds)
 echo
 ansi::heading "$star * Requesting funds from the facuet:" 80 "$star"
 
 
 echo -ne '#                         (0%)\r'
 
-sleep 3
+sleep 15
 echo -ne '#####                     (33%)\r'
-sleep 3
+sleep 15
 echo -ne '#############             (66%)\r'
-sleep 3
+sleep 15
 echo -ne '#######################   (100%)\r'
 echo -ne '\n'
 
