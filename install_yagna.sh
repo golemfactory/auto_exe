@@ -1,6 +1,9 @@
 #!/bin/bash
 
 . lib/ansi.sh
+. config.sh
+
+
 
 mkdir ~/test_run
 cd ~/test_run
@@ -8,7 +11,7 @@ cd ~/test_run
 echo
 ansi::heading "$star * Installing Yagna" 80 "$star"
 
-curl -sSf https://join.golem.network/as-requestor | YA_INSTALLER_CORE="pre-rel-v0.5.0-g3e2372e4" bash -
+curl -sSf https://join.golem.network/as-requestor | bash -
 yagna --version
 
 
@@ -16,21 +19,21 @@ yagna --version
 echo
 ansi::heading "$star * Initialising Yagna Daemon" 80 "$star"
 yagna service run >> ~/yagna.logs 2>&1 &
-# echo "	`yagna service run`"
+echo "Starting up Yagna. Waiting 10 seconds to initialise."
+sleep 10
 
-
-# Awaiting funds from the faucet (45 seconds)
+# Requesting and awaiting funds from the zksync faucet (45 seconds)
 echo
+yagna payment init -r 
 ansi::heading "$star * Requesting funds from the facuet:" 80 "$star"
 
 
 echo -ne '#                         (0%)\r'
-
-sleep 15
+sleep 10
 echo -ne '#####                     (33%)\r'
-sleep 15
+sleep 10
 echo -ne '#############             (66%)\r'
-sleep 15
+sleep 10
 echo -ne '#######################   (100%)\r'
 echo -ne '\n'
 

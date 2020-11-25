@@ -2,5 +2,6 @@
 
 ./clean.sh
 ./install_yagna.sh
-./run_primer_tutorial_python.sh
+./setup_python_tutorials.sh
+./run_python_tutorials.sh
 
