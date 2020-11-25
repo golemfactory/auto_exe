@@ -19,10 +19,10 @@ cd examples/blender
 python3 ./blender.py --subnet-tag community.3
 
 # Yacat
-#echo
-#ansi::heading "$star * Running Yacat tutorial" 80 "$star"
-#cd ../yacat
-#python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag community.3 --number-of-providers 3
+echo
+ansi::heading "$star * Running Yacat tutorial" 80 "$star"
+cd ../yacat
+python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag community.3 --number-of-providers 3
 
 
 # VIM
@@ -43,20 +43,12 @@ ansi::heading "$star * Hints" 80 "$star"
 echo
 echo
 echo "To continue running tests execute the following:"
-echo "	cd ~/test_run/yapapi/examples/blender/"
-echo "	export YAGNA_APPKEY=$YAGNA_APPKEY"
-echo "	source ~/.envs/yagna-python-tutorial/bin/activate"
-echo "	python3 ./blender.py --subnet-tag community.3"
+echo "./run_python_tutorials.sh"
+
 echo
 echo "You can access your L1 address on etherscan here:"
 echo "	--> https://rinkeby.etherscan.io/address/$YAGNA_ADDR"
 echo "You can access your L2 funds on zkSync here:"
 echo "	--> https://rinkeby.zkscan.io/explorer/accounts/$YAGNA_ADDR"
-
-
-echo "After experiments you're done with the experiments:"
-echo
-echo "	deactivate"
-echo "	cd ../../../"
 
 
