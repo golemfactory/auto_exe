@@ -18,7 +18,7 @@ ansi::heading "$star * Running QuickPrimer tutorial" 80 "$star"
 cd ..
 git clone https://github.com/golemfactory/auto_exe.git
 cd auto_exe/test_apps/
-python3 ./blender-small-8x.py --subnet-tag community.3
+python3 ./blender-small-12x.py --subnet-tag community.3
 
 #cd examples/blender
 #python3 ./blender.py --subnet-tag community.3
