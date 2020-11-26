@@ -9,8 +9,12 @@ If you have never install yagna, and this is when you want to start - you're mor
 
 ## Prerequisites
 
-You're going to need jq and python3-venv pacakages installed
-brew install jq or apt-get jq python3-venv
+You're going to need 
+* jq
+and
+* python3-venv 
+
+```brew install jq or apt-get jq python3-venv```
 
 
 ## Fetch this repo
