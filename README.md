@@ -1,6 +1,7 @@
 # Installing and running Yagna Tutorials
 
-## This script will run New Golem installation process from scratch, and run tutorials on top of it.
+## How auto_exe works
+This script will run New Golem installation process from scratch, and run tutorials on top of it.
 
 
 ### Disclaimer
@@ -13,7 +14,6 @@ If you have never install yagna, and this is when you want to start - you're mor
 
 You're going to need 
 * jq
-and
 * python3-venv 
 
 ```brew install jq or apt-get jq python3-venv```
