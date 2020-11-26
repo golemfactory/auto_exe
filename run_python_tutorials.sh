@@ -17,11 +17,10 @@ echo
 ansi::heading "$star * Running QuickPrimer tutorial" 80 "$star"
 cd ..
 git clone https://github.com/golemfactory/auto_exe.git
-cd auto_exe/test_apps/
-python3 ./blender-small-12x.py --subnet-tag community.3
+cp auto_exe/test_apps/blender-small-12x.py ~/test_run/yapapi/examples/blender/
 
-#cd examples/blender
-#python3 ./blender.py --subnet-tag community.3
+cd ~/test_run/yapapi/examples/blender
+python3 ./blender-small-12x.py --subnet-tag community.3
 
 # Yacat
 #echo

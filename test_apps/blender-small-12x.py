@@ -84,7 +84,7 @@ async def main(subnet_tag: str):
     # the level of detail and format of the logged information.
     async with Executor(
         package=package,
-        max_workers=12,
+        max_workers=8,
         budget=10.0,
         timeout=init_overhead + timedelta(minutes=len(frames) * 2),
         subnet_tag=subnet_tag,
