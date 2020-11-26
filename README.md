@@ -1,5 +1,7 @@
 # Installing and running Yagna Tutorials
 
+## This script will run New Golem installation process from scratch, and run tutorials on top of it.
+
 
 ### Disclaimer
 
