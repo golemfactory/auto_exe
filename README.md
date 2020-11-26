@@ -31,7 +31,7 @@ To install all pre-reqs, set up yagna, run everything needed, and run tutorials:
 ```./run_all.sh```
 
 
-
+# Or you can go step by step
 
 ## Clean Up from all previous runs, 
 
