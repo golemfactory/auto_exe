@@ -15,14 +15,19 @@ cd ~/test_run/yapapi/
 # Blender
 echo
 ansi::heading "$star * Running QuickPrimer tutorial" 80 "$star"
-cd examples/blender
-python3 ./blender.py --subnet-tag community.3
+cd ..
+git clone https://github.com/golemfactory/auto_exe.git
+cd auto_exe/test_apps/
+python3 ./blender-small-8x.py --subnet-tag community.3
+
+#cd examples/blender
+#python3 ./blender.py --subnet-tag community.3
 
 # Yacat
-echo
-ansi::heading "$star * Running Yacat tutorial" 80 "$star"
-cd ../yacat
-python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag community.3 --number-of-providers 3
+#echo
+#ansi::heading "$star * Running Yacat tutorial" 80 "$star"
+#cd ../yacat
+#python3 yacat.py '?a?a?a?a' '$H$5ZDzPE45C.e3TjJ2Qi58Aaozha6cs30' --subnet-tag community.3 --number-of-providers 3
 
 
 # VIM
