@@ -23,19 +23,11 @@ echo "Starting up Yagna. Waiting 10 seconds to initialise."
 sleep 10
 
 # Requesting and awaiting funds from the zksync faucet (45 seconds)
-echo
-yagna payment init -r 
-ansi::heading "$star * Requesting funds from the facuet:" 80 "$star"
+echo "Requesting funds on zksync, this can take while"
+yagna payment fund
+echo "Initialising account as sender"
+yagna payment init --sender
 
-
-echo -ne '#                         (0%)\r'
-sleep 10
-echo -ne '#####                     (33%)\r'
-sleep 10
-echo -ne '#############             (66%)\r'
-sleep 10
-echo -ne '#######################   (100%)\r'
-echo -ne '\n'
 
 
 # Yagna Identity
@@ -48,7 +40,8 @@ yagna app-key list
 # Checking for payments status, do we have founds?
 echo
 ansi::heading "$star * Initialising Yagna Daemon" 80 "$star"
-yagna payment status
+yagna payment status --network rinkeby --driver zksync 
+
 
 
 
