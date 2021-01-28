@@ -20,7 +20,7 @@ git clone https://github.com/golemfactory/auto_exe.git
 cp auto_exe/test_apps/* ~/test_run/yapapi/examples/blender/
 
 cd ~/test_run/yapapi/examples/blender
-python3 ./blender-normal-8x.py --subnet-tag community.3
+python3 ./blender-normal-8x.py --subnet-tag devnet-alpha.4
 
 # Yacat
 #echo
